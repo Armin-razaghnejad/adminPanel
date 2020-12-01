@@ -1,0 +1,13 @@
+<div class="bg-blue" *ngFor="let i of item;index as ir">
+   <div class="container border p-4 mb-2">
+      <ul class="mb-0 col-12 p-0 ">
+         <li class="col-12 p-1 bg-primary rounded"><h4>{{i.name}}</h4></li> 
+         <p class="mt-2 border-right">اکانت شخص در حالت : {{i.status}}</p>
+         <hr>
+         <button (click)="Changw(1,this.ir)" class="btn btn-success">فعال</button>
+         <button (click)="Changw(2,this.ir)" class="btn btn-warning">غیر فعال</button>
+         <button (click)="Changw(3,this.ir)" class="btn btn-info">نا محسوس</button>
+         <button (click)="Changw(0,this.ir)" class="btn btn-danger left">حذف</button>
+      </ul>
+   </div>
+</div>

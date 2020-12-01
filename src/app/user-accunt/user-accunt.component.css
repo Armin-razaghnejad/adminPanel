@@ -1,0 +1,12 @@
+select,input{
+    direction: rtl;
+}
+h5{
+    direction: rtl;
+}
+*{
+    direction: rtl;
+}
+.err{
+    border:2px solid red !important;
+}
